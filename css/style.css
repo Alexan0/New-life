@@ -660,14 +660,9 @@ body.lock {
   margin: 0px 0px 41px 0px;
 }
 
-.newlife__video {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.newlife__video video {
-  width: 1160px;
+.newlife__video iframe {
+  width: 100%;
+  min-height: 363px;
 }
 
 .content-newlife__image {
@@ -4272,6 +4267,12 @@ body.lock {
 }
 
 @media (max-width: 479.98px) {
+  .wrapper.lock {
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+  }
+
   .popup__title {
     font-size: 26px;
     margin: 0px 0px 15px 0px;
